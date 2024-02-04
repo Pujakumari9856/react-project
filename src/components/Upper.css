@@ -1,0 +1,15 @@
+.above-nav{
+    width: 100vw;
+    height: 60px;
+    background-color: #000000;
+    /* text-align: center; */
+}
+.imagess img{
+    /* margin-left: 120px; */
+    margin: 0.3rem auto;
+}
+.imagess{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
