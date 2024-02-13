@@ -1,15 +1,27 @@
 import './App.css';
-import { Upper } from "./components/Upper";
-import Navbar from "./components/Navbar";
-function App() {
-  return (
+import {Routes,Route} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Passport from './pages/Passport';
+import Visas from './pages/Visas';
+import Pancard from './pages/Pancard';
+import Contactus from './pages/Contactus';
+import Aboutus from './pages/Aboutus';
+import { Header } from './components/Header';
+function App(){
+  return(
     <div>
-      <div className='bgg'>
-        <Upper />
-        <Navbar />
-      </div>
+      <Header/>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/passport" element={<Passport/>}/>
+        <Route path="/visas" element={<Visas/>}/>
+        <Route path="/pancard" element={<Pancard/>}/>
+        <Route path="/contact" element={<Contactus/>}/>
+        <Route path="/about" element={<Aboutus/>}/>
+      </Routes>
     </div>
-  );
+  )
 }
-
 export default App;

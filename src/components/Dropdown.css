@@ -1,0 +1,27 @@
+.dropdown-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    cursor: pointer;
+    position: absolute;
+    top: 125px;
+    right: 140px;
+    /* left: 35px; */
+    width: 80%;
+    margin: 0 auto;
+}
+.dropdown-subItems{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-size: 15px;
+}
+.lastItem{
+    width: 380px;
+}
+.dropdown-content{
+    color: #000000;
+    margin-bottom: 3px;
+}
+.boldItem{
+    font-weight: 600;
+}
